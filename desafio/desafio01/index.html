@@ -7,44 +7,34 @@
     <title>27/jan/23</title>
     <style>
         body{
-            background-color: lightgoldenrodyellow;
+            background-color: rgb(193, 193, 159);
            
         }
 
-        main{
-            
-            margin: 0px auto 0px 120px;
-        }
+      main{
+        background-color: brown;
+        margin: auto;
+        max-width: 1250px;
+        min-width: 350px;
+        padding: 10px;
+      }
 
-        section{
-            background-color: white;
-            max-width: 1400px;
-            max-height: 1400px;
-        }
+      main>section{
+        column-count: 2;
+        column-gap: 1em;
+      }
 
-         #n1{
-            height: 400px;
-            height: 580px;
-            background-color: aquamarine;
-            background-image: url(imagem/imagem\ \(2\).jpg);
-            
-         }
+      main>section>nav>a>img{
+        max-width: 100%;
+        min-width: 10%;
 
-         #n2{
-            height: 810px;
-            width: 580px;
-            background-color: rgb(142, 127, 255);
-            margin: -399px 0px -402px 610px;
-            background-image: url(imagem/vertical23.jpg);
-         }
-
-         #n3{
-            height: 400px;
-            width: 580px;
-            background-color: rgb(255, 127, 129);
-            margin:-300px 0px 0px 0px;
-          
-         }
+      }
+      main>section>nav>a>img:hover {
+        max-width: 100%;
+        min-width: 10%;
+        transform: scale(1.1);
+      }
+    
          
        
         
@@ -60,21 +50,20 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quasi, mollitia culpa molestiae itaque inventore autem blanditiis ex, veritatis corrupti quis doloribus expedita, quibusdam assumenda repellendus consequuntur qui! Exercitationem, natus.</p>
     
     
-     <main>
+    <main>
         <section>
-             
-          <div id="n1">
-                 
-          </div>
-          <div id="n2">
-
-          </div>
-          <div id="n3">
-                 <a href="#"><img src="imagem/imagem (3).jpg" alt="jogador de futebol"></a>
-          </div>
-
+              <nav>
+                  <a href="#"><img src="imagem/vertical23.jpg"  alt="imagem" id="p1"></a>
+              </nav>
+              <nav>
+                <a href="#"><img src="imagem/imagem (2).jpg"  alt="imagem" id="p2"></a>
+                <a href="#"><img src="imagem/imagem (3).jpg"  alt="imagem" id="p3"></a>
+              </nav>
         </section>
-     </main>
+    </main>
+
+    
+     
     
 </body>
 </html>
