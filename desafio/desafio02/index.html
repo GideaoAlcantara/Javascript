@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao des02</title>
+</head>
+<body>
+    <input type="number" name="numero1" id="n1">+
+    <input type="number" name="numero" id="n2">
+    <input type="button" value="Somar" onclick="somar()">
+
+    <div id="res">
+        resposta
+    </div>
+
+    <script>
+        function somar(){ 
+
+            var caixa01 = window.document.getElementById('n1')
+            var caixa02 = window.document.querySelector('input#n2')
+            var res = window.document.getElementById('res')
+
+            var n1 = Number(caixa01.value)
+            var n2 = Number(caixa02.value)
+            var s = n1+n2 
+
+            res.innerHTML = `a soma de ${n1} mais ${n2} será igual a ${s}`
+
+        }
+
+    </script>
+    
+
+    
+</body>
+</html>
