@@ -15,31 +15,26 @@
     </style>
 </head>
 <body>
-      <div id="caixa" onclick="clicar()" onmouseout="passa()">
+      <div id="caixa" onclick="clicar()" onmousemove="passando()" onmouseout="sair()">
         <h1>titulo</h1>
 
         <p>papo de bebo</p>
       </div>
 
     <script>
-        var titulo = window.document.getElementsByTagName('h1')[0]
-        titulo.style.backgroundColor='yellow'
+        var cor = window.document.getElementById('caixa') 
 
-        var caixa = window.document.getElementById('caixa')
+        function clicar(){
+          cor.style.height='600px'
+        }
 
-        var texto = window.document.getElementsByTagName('p')[0]
-        texto.style.backgroundColor='green'
+        function sair(){
+          cor.style.height='300px'
+        }
 
-       function clicar(){
-      
-       caixa.innerHTML='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci iusto? Nostrum officiis, explicabo repudiandae ad, nemo excepturi beatae, adipisci commodi fugiat aperiam ex maxime tenetur labore mollitia repellat omnis.'
-       }
-
-      function passa() {
-        caixa.style.backgroundColor='red'
-      }
-        
-
+        function passando(){
+          cor.innerHTML='Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quas harum suscipit expedita eligendi atque repellat delectus doloremque, enim perferendis id nemo rerum aspernatur minus non, blanditiis maiores accusantium nesciunt'}
+       
     </script>
 </body>
 </html>
