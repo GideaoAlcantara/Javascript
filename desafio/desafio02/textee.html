@@ -6,35 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       div#caixa{
-         background-color: aquamarine;
-         width: 300px;
-         height: 300px;
-         text-align: center;
-       }
+      span{
+        color: red;
+      }
+      h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      #caixa1{
+        border: 2px solid black;
+      }
+
+      #caixa2{
+        border: 2px solid black;
+      }
+      
+      #caixa3{
+        border: 2px solid black;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.593);
+      }
+
+      
     </style>
+    
 </head>
 <body>
-      <div id="caixa" onclick="clicar()" onmousemove="passando()" onmouseout="sair()">
-        <h1>titulo</h1>
+     <h1>Somando Valores</h1>
 
-        <p>papo de bebo</p>
-      </div>
+    <input type="number" name="caixa1" id="caixa1">+
+    <input type="number" name="caixa2" id="caixa2">
+    <input type="button" value="somar" onclick="somar()" id="caixa3">
+
+    <h3>resposta = <span id="resposta">valor</span> </h3>
+
 
     <script>
-        var cor = window.document.getElementById('caixa') 
+            function somar(){
+                var n1 = window.document.getElementById('caixa1')
+                var n2 = window.document.getElementById('caixa2')
+                var valor = window.document.getElementById('resposta')
 
-        function clicar(){
-          cor.style.height='600px'
-        }
+                var m1 = Number(n1.value)
+                var m2 = Number(n2.value)
 
-        function sair(){
-          cor.style.height='300px'
-        }
+                var s = m1 + m2 
 
-        function passando(){
-          cor.innerHTML='Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quas harum suscipit expedita eligendi atque repellat delectus doloremque, enim perferendis id nemo rerum aspernatur minus non, blanditiis maiores accusantium nesciunt'}
-       
+                valor.innerText = `A soma de valor de ${m1} mais ${m2} será igual a ${s}`
+
+            }
+
+
     </script>
 </body>
 </html>

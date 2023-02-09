@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Condicao JavScript</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>VOTO OBRIGATORIO/FACULTATIVO</h1>
+
+    Digite sua idade :
+
+    <input type="number" name="num1" id="num1">
+
+    <input type="button" value="voto" onclick="clica()">
+
+    <p id="resp">resposta</p>
+
+    <script>
+            function clica(){
+                var caixa = window.document.querySelector('input#num1')
+                var saida = window.document.querySelector('p#resp')
+
+                var valor = Number(caixa.value)
+
+                if(valor<18){
+                    saida.innerHTML='Facultativo'
+                }else{
+                    saida.innerHTML='obrigatorio'
+                }
+            }
+    </script>
+    
+</body>
+</html>
