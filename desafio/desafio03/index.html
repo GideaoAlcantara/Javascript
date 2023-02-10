@@ -12,7 +12,40 @@
     </style>
 </head>
 <body>
-    <h1>VOTO OBRIGATORIO/FACULTATIVO</h1>
+    <h1>NACIONALIDADE</h1>
+
+    Digite seu País :
+
+    <input type="text" name="pais" id="pais">
+
+    <input type="button" value="origem" onclick="clicar()">
+
+    <p id="resultado">resposta</p>
+
+    <script>
+            function clicar(){
+                var nasc = window.document.getElementById('pais')
+                var res  = window.document.querySelector('p#resultado')
+
+                var saida = String(nasc.value)
+
+                if(saida=='brasil'){
+                    res.innerHTML='voce é <strong>brasileiro</strong>'
+                }else{
+                    res.innerHTML='voce é <strong>extrangeiro</strong>'
+                }
+            }
+    </script>
+
+   
+
+
+
+
+
+
+   <!--
+     <h1>VOTO OBRIGATORIO/FACULTATIVO</h1>
 
     Digite sua idade :
 
@@ -36,6 +69,7 @@
                 }
             }
     </script>
+   -->
     
 </body>
 </html>
