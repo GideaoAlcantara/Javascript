@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiccional Aninhada</title>
+</head>
+<body>
+    <h1>Condição Aninhada</h1>
+
+    <input type="number" name="n1" id="n1">
+    <input type="button" value="Valor" onclick="clicar()">
+    <p id="resp">Resposta</p>
+
+    <script>
+        
+        function clicar() {
+            var v1 = window.document.getElementById('n1')
+            var v2 = window.document.querySelector('p#resp')
+            var v3 =Number(v1.value)
+            
+            switch(v3){
+
+             case v3==0:
+                v2.innerHTML=`O numero ${v3} é par`
+                break
+                
+             case v3==1:
+                v2.innerHTML=`O numero ${v3} é impar`
+                break
+
+           }
+          
+        }
+       
+    </script>
+    
+</body>
+</html>
