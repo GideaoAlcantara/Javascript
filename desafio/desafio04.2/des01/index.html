@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Base do peso</h1>
+
+    <table>
+        <tr>
+            <th class="tito">Peso (Kg)</th>
+        </tr>
+        <tr>
+            <th><input type="number" name="peso" id="peso"></th>
+        </tr>
+        <tr>
+            <th class="tito">Altura (m)</th>
+        </tr>
+        <tr>
+            <th><input type="number" name="altura" id="altura"></th>
+        </tr>
+        <tr>
+            <th class="tito">Resposta IMC</th>
+        </tr>
+        <tr>
+            <th id="resp">0000</th>
+        </tr>
+        <tr>
+            <th id="imagem"><img id="foto" src="https://www.comofazer.net/wp-content/uploads/2016/02/pesar-na-balanca-700x455.png" alt="peso"></th>
+        </tr>
+        <tr id="butao">
+            <th><input type="button" value="medir" onclick="soma()"></th>
+        </tr>
+    </table>
+
+    <script src="calculo.js"></script>
+    
+</body>
+</html>
