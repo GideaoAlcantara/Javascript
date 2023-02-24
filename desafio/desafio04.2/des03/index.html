@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão III</title>
+    <style>
+        body>h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         section{
+            background-color: burlywood;
+            margin: auto;
+         }
+
+         section{
+            background-color: antiquewhite;
+            padding: 20px;
+            max-width: 500px;
+            font-family:Arial, Helvetica, sans-serif;
+         }
+    </style>
+</head>
+<body>
+                       <h1>TABELA PENSÃO</h1>
+       <section>
+               <div>
+                Digite seu nome
+                <input type="text" name="nome" id="nome"><br>
+                <br>
+                Sexo:
+                <input type="radio" name="tsex" id="masc" checked>
+                <label for="masc"> masculino</label>
+                <input type="radio" name="tsex" id="fem">
+                <label for="fem"> feminino</label>
+               </div>
+               <br>
+               <div>
+                 <p>Idade (anos) </p>
+                 <input type="number" name="idade" id="idade">
+                 <p>Tempo de trablho (Anos) - do Falecido(a)</p>
+                 <input type="number" name="tb" id="tb">
+                 <p>Tempo de União</p>
+                 <input type="number" name="uniao" id="uniao">
+                 <br>
+                 <br>
+                 <input type="button" value="calcular" onclick="pensao()">
+               </div>
+                <br>
+               <div>
+                  <p>resposta</p>
+                  <p>imagem</p>
+               </div>
+       </section>
+       <script src="pensao.js"></script>
+</body>
+</html>
