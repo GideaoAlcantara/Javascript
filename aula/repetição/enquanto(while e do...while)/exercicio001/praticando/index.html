@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisando</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+         header{
+            font-family: Arial, Helvetica, sans-serif ;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 20px;
+            
+         }
+         header>nav>ol{
+            list-style-type: none;
+            display: flex;
+            
+        
+         }
+         a{
+            text-decoration: none;
+            color: aliceblue;
+            margin-left: 10px;
+            padding: 10px;
+         }
+
+         main{
+             background-color: burlywood;
+             padding: 10px;
+             width: 300px;
+             margin: auto;
+            
+         }
+         h1{
+            padding: 30px 0px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+         }
+    </style>
+</head>
+<body>
+    <header>
+         <a href="#">Menu</a>
+         
+         <nav>
+            <ol>
+                <li><a href="#">saiba</a></li>
+                <li><a href="#">contato</a></li>
+                <li><a href="#">fone</a></li>
+          </ol>
+         </nav>
+    </header>
+
+    <h1>contador</h1>
+
+    <main>
+       
+
+        <div>
+            <p>
+               digite o inicio:
+               <input type="number" name="num1" id="num1">
+            </p>
+
+             <p>
+                digite o fim:
+                <input type="number" name="num2" id="num2">
+             </p>
+        </div>
+           <input type="button" value="contar" onclick="conta()">
+        <div>
+            <p id="resp">Resposta</p>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="contador.js"></script>
+</body>
+</html>
