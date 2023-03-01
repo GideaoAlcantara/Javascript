@@ -1,0 +1,23 @@
+@charset "UTF-8" ;
+
+body{
+    background-color: beige;
+}
+
+body>h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+   text-shadow: 1px 1px 1px rgba(31, 29, 29, 0.355);
+   
+}
+
+article{
+    background-color: khaki;
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.256);
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8" ;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(102, 178, 244);
+}
+
+header>h1{
+    text-align: center;
+}
+
+main{
+    max-width: 600px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.189);
+    margin: auto;
+}
+
+footer{
+    text-align: center;
+}
