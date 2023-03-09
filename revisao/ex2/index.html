@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header,footer{
+            text-align: center;
+        }
+        main{
+            width: 400px;
+            height: 200px;
+            background-color: white ;
+            padding: 15px;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1>Contador</h1>
+    </header>
+
+    <main>
+
+        <form action="#">
+
+            <label for="valor1">digite 5 numeros :</label>
+
+            <input type="number" name="num2" id="valor1">
+
+            <input type="submit" value="enviar" onclick="enviar()" >
+
+        </form>
+           <br>
+        <form action="#">
+             <input type="button" value="contar" onclick="contar()">
+        </form>
+
+        <div>
+            ...
+        </div>
+
+    </main>
+
+    <footer>
+         <p>&copy;<em>CursoemVideo</em></p>
+    </footer>
+    <script src="contar.js"></script>
+</body>
+</html>
