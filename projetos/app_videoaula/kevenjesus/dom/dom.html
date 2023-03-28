@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            padding: 10px;
+        }
+        div.filho{
+            line-height: 50px;
+        }
+    </style>
+    
+</head>
+<body>
+   <header>
+     <h1>formulario imc</h1>
+   </header>
+   <section>
+     <p>
+        <label for="numero01">primeiro numero</label>
+        <input type="number" name="numb" id="numero01"> <br>
+     </p>
+
+      <p>
+        <label for="numero02">segundo numero</label>
+        <input type="number" name="numb" id="numero02"> <br>  
+      </p>
+
+      <p>
+        <input type="button" value="somar" onclick="somar()">
+      </p>
+
+   </section>
+   <footer>
+       <p class="saida">...</p>
+   </footer>
+       <script src="dom.js"></script>
+</body>
+</html>

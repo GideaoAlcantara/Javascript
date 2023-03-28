@@ -23,6 +23,9 @@ function adicionar() {
 
         lista.appendChild(item)
 
+        //limpartela da resposta
+        res.innerHTML = ''
+
         }else{
             window.alert('Valor invalido ou já encontrado na lista.')
         }
@@ -65,10 +68,47 @@ function finalizar() {
            window.alert(`adicione valores antes de finalizar`)
     }else{
         let tot = valores.length
+         //var de comparar o maior e menor valor
+        let maior = valores[0]
+
+        let menor = valores[0]
+        //var de soma e media
+        let soma = 0
+
+        let media = 0
+
+     for(let pos in valores){
+
+        //soma os valores
+        soma += valores[pos]
+    
+
+        //comparar maior e menor
+        if(valores[pos] > maior){
+            maior = valores[pos]
+        }else{
+            if(valores[pos] < menor){
+                menor = valores[pos]
+            }
+        }
+     }
+      //----------------------------------
+          //media
+
+          media = soma / tot
+
 
         res.innerHTML = ''
 
-        res.innerHTML += `<p>Ao todo, temos ${tot} numeros cadastrados</p>`
+        res.innerHTML += `<p>Ao todo, temos ${tot} numeros cadastrados.</p>`
+
+        res.innerHTML += `<p>o maior valor informado foi ${maior}.</p>`
+
+        res.innerHTML += `<p>o menor valor informado foi ${menor}.</p>`
+
+        res.innerHTML += `<p>somandos todos os numeros temos ${soma}</p>`
+
+        res.innerHTML += `<p>a média dos valores informado é ${media}</p>`
     }
 
 }
