@@ -1,13 +1,7 @@
-let num = [9,8,7,6,5,4,3,2,1,0]
+let num = [9,8,7,6,5,4,3,2,1,0];
 
-num[10] = 10 
-
-num.push(11)
-
-num.push(12)
-
-
-
-console.log(num.length);
+for(let a = 0 ; a < num.length ; a++){
+    console.log(num[a]);
+}
 
 
