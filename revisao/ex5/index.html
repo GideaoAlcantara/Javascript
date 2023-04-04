@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(172, 255, 255, 0.659);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header>h1{
+            text-align: center;
+        }
+        main{
+            
+            border: 1px solid black;
+           padding: 10px;
+           width: 400px;
+           margin: auto;
+           background-color: aliceblue;
+
+        }
+        P#resposta{
+            border: 1px solid rgba(0, 0, 0, 0.19);
+            padding: 10px;
+            width: 300px;
+            margin: auto;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Revisão</h1>
+
+    <header>
+         <h1>Medida de IMC</h1>
+    </header>
+    <main>
+        
+            <p>
+                <label for="ipeso">Digite seu peso :</label>
+                 <input type="number" name="peso" id="ipeso">
+             </p>
+             <p>
+                 <label for="ialtura">Digite sua altura :</label>
+                 <input type="number" name="altura" id="ialtura">
+             </p>
+             <p id="resposta">
+                ...
+             </p>
+             <p>
+                <input type="button" value="calcular IMC" onclick="calcula()">
+             </p>
+    </main>
+    <footer>
+          <p>&copy;GideãoAlcantara</p>
+    </footer>
+
+    <script src="ex5.js">
+    </script>
+</body>
+</html>
