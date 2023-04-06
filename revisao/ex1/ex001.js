@@ -1,17 +1,59 @@
-let valor = [1,3,2,4,6,5,7,9,8,0]
 
-//valor.sort()
+function contar() {
+    let num01 = window.document.getElementById('inum')
+    let num02 = window.document.querySelector('input#iinum')
+    let exit = window.document.getElementById('iresp')
 
-valor[10] = 10
+    let valor01 = Number(num01.value)
+    let valor02 = Number(num02.value)
 
-console.log(valor);
+   for (let index = 0; index < valor02; index++) {
+  
+    
+        exit.innerHTML+=`${valor01} `
+        valor01+=1
+       
+   
 
-let resp = valor[3] * valor[3]
-
-console.log(resp);
-
-console.log();
-
-for(let x in valor){
-    console.log(`a casa ${x} tem o valor ${valor[x]}`);
+   }
+   
+   
 }
+
+/*
+ while (valor02 > valor01) {
+       
+        exit.innerHTML += `${valor01} `
+        valor01 += 1
+    }
+*/ 
+//----------------------------------------------
+/*
+do {
+        exit.innerHTML+=`${valor01} `
+        valor01+=1
+       
+   } while (valor02 >= valor01);
+ */
+//--------------------------------------------------
+/*
+if (valor02 > valor01) {
+    
+    do {
+        exit.innerHTML+=`${valor01} `
+        valor01+=1
+       
+   } while (valor02 >= valor01);
+
+   } else {
+       if(valor02 < valor01){
+           
+        do {
+            exit.innerHTML+=`${valor01} `
+            valor01-=1
+           
+       } while (valor02 <= valor01);
+
+       }
+   }
+*/
