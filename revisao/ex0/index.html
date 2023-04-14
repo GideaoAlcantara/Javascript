@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resumo</title>
+    <style>
+        header{
+            text-align: center;
+        }
+        body{
+           background-color: rgb(145, 184, 255);
+        }
+        main{
+            background-color: aliceblue;
+            padding: 10px;
+            max-width: 500px;
+        }
+        div{
+            border: 1px solid rgba(99, 98, 98, 0.255);
+            padding: 5px;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1>contador</h1>
+    </header>
+    <main>
+         <p>
+            <label for="inumb">digite o inicio: </label>
+            <input type="number" name="numb" id="inumb">
+         </p>
+         <p>
+            <label for="iinumb">digite o fim: </label>
+            <input type="number" name="numb" id="iinumb">
+         </p>
+         <p>
+            <input type="button" value="contar" onclick="contar()">
+         </p>
+         <div id="rep01">
+            ...
+         </div>
+         <div id="rep02">
+            ...
+         </div>
+    </main>
+    <footer>
+        <p>&copy;GideaoTEC</p>
+    </footer>
+    <script src="revisa.js"></script>
+</body>
+</html>
