@@ -4,67 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>27/jan/23</title>
+    <title>Revisão 01</title>
     <style>
         body{
-            background-color: rgb(193, 193, 159);
-           
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(227, 221, 169);
+        }
+        header{
+          text-align: center;
+          text-shadow: 1px 1px 1px darkgray;
+        }
+        main{
+          background-color: white;
+          padding: 10px;
+          max-width: 460px;
+          margin: auto;
+        }
+        footer{
+          text-align: center;
+          text-shadow: 1px 1px 1px darkgray;
+        }
+        div#resp{
+          margin: auto;
+          max-width: 458px;
+          height: 300px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          padding: 5px;
+          text-align: center;
+
         }
 
-      main{
-        background-color: brown;
-        margin: auto;
-        max-width: 1250px;
-        min-width: 350px;
-        padding: 10px;
-      }
-
-      main>section{
-        column-count: 2;
-        column-gap: 1em;
-      }
-
-      main>section>nav>a>img{
-        max-width: 100%;
-        min-width: 10%;
-
-      }
-      main>section>nav>a>img:hover {
-        max-width: 100%;
-        min-width: 10%;
-        transform: scale(1.1);
-      }
-    
-         
-       
-        
-
-       
-       
-        
+        img{
+          width: 60%;
+          border-radius:100%;
+          padding-top: 70px;
+        }
     </style>
 </head>
 <body>
-    <h1>Titulo</h1>
+   <header>
+       <h1>SISTEMA DE NASCIONALIDADE</h1>
+   </header>
+   <main>
+       <div style="font-weight: bolder;">
+        <label for="país">Digite o nome do país que voce nasceu: </label>
+        <input type="text" name="país" id="país">
+        <input type="button" value="clicar" onclick="nascer()">
+       </div> <br>
+       <div id="resp">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quasi, mollitia culpa molestiae itaque inventore autem blanditiis ex, veritatis corrupti quis doloribus expedita, quibusdam assumenda repellendus consequuntur qui! Exercitationem, natus.</p>
-    
-    
-    <main>
-        <section>
-              <nav>
-                  <a href="#"><img src="imagem/vertical23.jpg"  alt="imagem" id="p1"></a>
-              </nav>
-              <nav>
-                <a href="#"><img src="imagem/imagem (2).jpg"  alt="imagem" id="p2"></a>
-                <a href="#"><img src="imagem/imagem (3).jpg"  alt="imagem" id="p3"></a>
-              </nav>
-        </section>
-    </main>
+       
 
-    
-     
-    
+        <img src="https://static3.depositphotos.com/1001718/134/i/600/depositphotos_1344862-stock-photo-257-world-flags-complete-collection.jpg" alt="imagem">
+         
+       </div>
+   </main>
+   <footer>
+       <p>&copy;GideoaAlimatec</p>
+   </footer>
+   <script src="exe.js"></script>
+  
 </body>
 </html>
 
