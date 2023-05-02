@@ -8,6 +8,8 @@ function horario() {
    let resp = window.document.querySelector('div#res')
    let fundo = window.document.getElementsByTagName('body')[0]
 
+   let teste = window.document.querySelector('img#teste')
+
    //1 passo - cria uma TAG
 
    let imag = window.document.createElement('img')
@@ -34,11 +36,16 @@ function horario() {
         if (hora > 12 && hora <= 17) {
 
             ihora.innerHTML = `Agora são <strong>${hora} Horas</strong>. Boa Tarde`
-            fundo.style.backgroundColor='#B06630'
+
+            //segunda maneira de fazer 
+            document.body.style.backgroundColor='#B06630'
 
             imag.setAttribute('src' , 'https://th.bing.com/th/id/OIP.ADsKbR8Os4F2a3rWfoeSxwAAAA?pid=ImgDet&rs=1')
 
             resp.appendChild(imag)
+
+            //segunda maneira de fazer
+            teste.src = 'https://th.bing.com/th/id/OIP._rnt-YvxF5YEfXCzRp29WQHaHa?pid=ImgDet&w=700&h=700&rs=1'
 
         } else {
            if (hora > 17) {
