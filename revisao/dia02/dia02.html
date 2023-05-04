@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisão dia 02</title>
+    <style>
+         *{
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         body{
+            background-color: rgb(108, 170, 232);
+         }
+        header,footer{
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.297);
+        }
+
+        main{
+            background-color: aliceblue;
+            padding: 15px;
+            margin: auto;
+            max-width: 500px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.237);
+            border-radius: 10px;
+        }
+
+        div#resp{
+            border: 1px solid rgb(182, 182, 182);
+            padding: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VAMOS CONTAR</h1>
+    </header>
+
+    <main>
+        
+                <P>
+                <label for="inicio">INICIO :</label>
+                <input type="number" name="inicio" id="inicio">
+                </P>
+         
+        
+                <P>
+                    <label for="fim">FIM :</label>
+                    <input type="number" name="fim" id="fim">
+                </P>
+         
+        
+                <P>
+                    <label for="passo">PASSO :</label>
+                    <input type="number" name="passo" id="passo">
+                </P>
+
+                <p>
+                    <input type="button" value="CONTAR" onclick="contagem()">
+                </p>
+         
+         <div id="resp">
+              <p>contando ...</p>
+         </div>
+    </main>
+    <script src="../dia02/dia02.js"></script>
+    <footer>
+        <p>&copy;GIDEAOTEC</p>
+    </footer>
+</body>
+</html>
