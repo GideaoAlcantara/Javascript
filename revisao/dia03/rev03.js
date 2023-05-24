@@ -1,59 +1,68 @@
-/*let exemplo = [9,2,4,7,1,0,3,5]
+/*const valor_padrao = 2
 
-let pp = 1
 
-let pos = exemplo.indexOf(pp)
+function teste(n1 = valor_padrao , n2 = valor_padrao) {
+     
+     let a = n1 * n2
 
-console.log();1 
+     return a
 
-if (pos == -1) {
-    console.log(`[ERRO] Valor não encontrado !`);
-} else {
-    console.log(`a casa ${pos} tem o valor ${pp}`);
 }
 
-console.log();
+let n = 12
+let f = 3
 
-for (let valor in exemplo) {
-    if (exemplo.hasOwnProperty.call(exemplo, valor)) {
-        let element = exemplo[valor];
-        console.log(`${element}`);
-    }
+ console.log(teste(n,f));*/
+
+
+
+/*let valor = 0
+
+console.log(valor);
+
+function add(V) {
+      return valor + V
 }
 
-console.log();
+valor = add(10)
 
-exemplo.forEach(valor02 => {
-    console.log(`${exemplo[valor02]}`);
-});
+console.log(valor);
 
-console.log();
+valor = add(5)
 
-for (const iterator of exemplo) {
-    console.log(exemplo[iterator]);
+console.log(valor);
+
+valor = add(10)
+
+console.log(valor);*/
+
+
+/*let valor = 0
+
+console.log(valor);
+
+function add(V) {
+
+       valor += V
+
 }
 
-/*for (const key in object) {
-    if (Object.hasOwnProperty.call(object, key)) {
-        const element = object[key];
-        
-    }
+      add(10)
+
+console.log(valor);
+
+      add(5)
+
+console.log(valor);
+
+      add(10)
+
+console.log(valor);*/
+
+/*function teste(x) {
+      return x
 }
-*/
 
-let valor = []
-
-valor[0] = 'presente'
-
-valor.push('futuro')
-
-valor.unshift('passado')
-
-valor.shift()
-
-
-
-console.log(valor[0],valor[1],valor[2]);
-
-
-
+console.log(teste('cachorro'));
+console.log(teste(12));
+console.log(teste(`tezera`));*/

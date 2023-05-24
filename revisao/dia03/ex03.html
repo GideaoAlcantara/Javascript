@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão dia 03</title>
+    <style>
+         body{
+            background-color: antiquewhite;
+         }
+         header,footer{
+            text-align: center;
+            padding: 10px;
+         }
+
+         main{
+            background-color: white;
+            padding: 10px;
+            max-width: 600px;
+            margin: auto;
+         }
+         main>form>div{
+            padding: 10px;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+         <h1>PAR OU IMPAR</h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+             <div>
+                <label for="inum">digite um numero :</label>
+                <input type="number" name="num" id="inum">
+             </div>
+             <div>
+                <input type="button" value="parouimpar" onclick="calcula()">
+             </div>
+             <div>
+                 carregando. ..
+             </div>
+        </form>
+    </main>
+    <footer id="rodape">
+          <p>&copy;GideaoTEC</p>
+    </footer>
+    <script src="rev03.js"></script>
+</body>
+</html>
