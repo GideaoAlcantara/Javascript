@@ -1,5 +1,5 @@
 
-function horario() {
+/*function horario() {
 
    let atual = new Date()
    let hora = atual.getHours()
@@ -60,4 +60,36 @@ function horario() {
            } 
         }
    }
+}*/
+
+
+/*function inicioefim(x , y) {
+   if (x <= y) {
+       while (x <= y) {
+         console.log(x);
+         x++
+       }
+   } else {
+      if (x >= y) {
+         do {
+            console.log(x);
+            x--
+         } while (x >= y);
+
+      }
+   }
 }
+
+inicioefim(0 , 10)*/
+
+let teste = 0
+console.log(teste);
+
+function add(valor) {
+      teste += valor
+}
+
+add(5)
+console.log(teste);
+add(10)
+console.log(teste);
