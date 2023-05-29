@@ -1,5 +1,5 @@
 
-/*function horario() {
+function horario() {
 
    let atual = new Date()
    let hora = atual.getHours()
@@ -8,6 +8,7 @@
    let resp = window.document.querySelector('div#res')
    let fundo = window.document.getElementsByTagName('body')[0]
 
+  
    let teste = window.document.querySelector('img#teste')
 
    //1 passo - cria uma TAG
@@ -18,6 +19,8 @@
 
    imag.setAttribute('id','foto')
 
+
+  
   
    
 
@@ -47,6 +50,11 @@
             //segunda maneira de fazer
             teste.src = 'https://th.bing.com/th/id/OIP._rnt-YvxF5YEfXCzRp29WQHaHa?pid=ImgDet&w=700&h=700&rs=1'
 
+            
+           
+
+
+
         } else {
            if (hora > 17) {
 
@@ -60,7 +68,7 @@
            } 
         }
    }
-}*/
+}
 
 
 /*function inicioefim(x , y) {
@@ -80,16 +88,15 @@
    }
 }
 
-inicioefim(0 , 10)*/
+inicioefim(0 , 10)
 
-let teste = 0
-console.log(teste);
 
-function add(valor) {
-      teste += valor
-}
+let atual = new Date()
 
-add(5)
-console.log(teste);
-add(10)
-console.log(teste);
+let hora = atual.getHours()
+
+console.log(hora);*/
+
+let n =10
+let x =-n
+console.log(x);
