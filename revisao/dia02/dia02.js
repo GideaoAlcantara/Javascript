@@ -1,4 +1,4 @@
- function contagem() {
+/* function contagem() {
    
     let iinicio = window.document.querySelector('input#inicio')
     let ifim = window.document.getElementById('fim')
@@ -52,5 +52,34 @@
        }
 
     }
- }
+ }*/
+
+ 
+ /*let x = {
+   nome:'gil',
+   idade:12,
+   altura:1.87,
+   turma:'9 C',
+};
+
+for (const key in x) {
+
+
+   if (Object.hasOwnProperty.call(x, key)) {
+
+      console.log( x[key]);
+      
+   }
+}*/
+
+for (const key in object) {
+   if (Object.hasOwnProperty.call(object, key)) {
+      const element = object[key];
+     
+   }
+}
+
+
+
+
 
