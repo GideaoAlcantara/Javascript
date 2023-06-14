@@ -24,22 +24,85 @@
     }
   }
 }
+let max = 1let n = 0
+000
+let pares = 0
+
+for(let x = n; x < max; x++){
+    if (x%2!=0) {
+       continue
+    }
+    pares++
+}
+console.log("fim da execução");
+console.log(`Existem ${pares} numeros pares`);
 */
 
-let X = [ 4, 2,7 , 3, 0, 6,]
+let hoje = new Date()
+let dia = hoje.getDay()
 
-X[6] = 10
+let imes = new Date()
+let mes = imes.getMonth()
 
-X.push(12)
+let iano = new Date()
+let ano = iano.getFullYear()
 
-X.unshift(-1)
+switch (mes) {
+  case 0:
+         mes = 'janeiro'
+    break;
 
+    case 1:
+         mes = 'fevereiro'
+    break;
 
+    case 2:
+         mes = 'março'
+    break;
 
-for (let A = 0; A < X.length; A++) {
-  
-  console.log(`${X[A]}`);
-  
+    case 3:
+          mes = 'abril'
+    break;
+
+    case 4:
+         mes = 'maio'
+    break;
+
+    case 5:
+        mes = 'junho'
+    break;
+
+    case 6:
+        mes = 'julho'
+    break;
+
+    case 7:
+        mes = 'agosto'
+    break;
+
+    case 8:
+       mes = 'setembro'
+    break;
+
+    case 9:
+        mes = 'outubro'
+    break;
+
+    case 10:
+        mes = 'novembro'
+    break;
+
+    case 11:
+       mes = 'dezembro'
+    break;
+
+  default:
+      mes = '[ERRO]'
+    break;
 }
+
+console.log(`${dia} / ${mes} / ${ano}`);
+
+
 
 
