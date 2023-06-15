@@ -38,71 +38,39 @@ console.log("fim da execução");
 console.log(`Existem ${pares} numeros pares`);
 */
 
-let hoje = new Date()
-let dia = hoje.getDay()
+//... indica que pode colocar o tanto que quiser na propriedade sem criar varias props.
+ /*function soma(...valores){
+    let tam=valores.length
+    let res=0
+    for(let i =0;i<tam;i++){
+        res+=valores[i]
+    }
+    return res
+ }
 
-let imes = new Date()
-let mes = imes.getMonth()
+console.log(soma(10,2,5,8));
 
-let iano = new Date()
-let ano = iano.getFullYear()
-
-switch (mes) {
-  case 0:
-         mes = 'janeiro'
-    break;
-
-    case 1:
-         mes = 'fevereiro'
-    break;
-
-    case 2:
-         mes = 'março'
-    break;
-
-    case 3:
-          mes = 'abril'
-    break;
-
-    case 4:
-         mes = 'maio'
-    break;
-
-    case 5:
-        mes = 'junho'
-    break;
-
-    case 6:
-        mes = 'julho'
-    break;
-
-    case 7:
-        mes = 'agosto'
-    break;
-
-    case 8:
-       mes = 'setembro'
-    break;
-
-    case 9:
-        mes = 'outubro'
-    break;
-
-    case 10:
-        mes = 'novembro'
-    break;
-
-    case 11:
-       mes = 'dezembro'
-    break;
-
-  default:
-      mes = '[ERRO]'
-    break;
+function teste(...variaveis) {
+        let soma = 0
+            for(let x in variaveis){
+                soma+=variaveis[x]
+             }
+        return soma
 }
 
-console.log(`${dia} / ${mes} / ${ano}`);
+console.log(teste(5,10,15));*/
 
+let exemplo = new Function("v1","v2","v3","return v1+v2+v3")
+//funcao construtor anonima
+//argumento=v1,v2 & corpo = return v1+v2
 
+//console.log(exemplo(3,7,9));
 
+let n1 = [12,13,14,90]
+let n2 = [45,67,89]
+let n3 = [...n1]
+n1[3] = 78
 
+console.log(n1);
+console.log(n2);
+console.log(n3);
