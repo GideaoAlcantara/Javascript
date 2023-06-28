@@ -4,6 +4,12 @@ function contar() {
     let segun = window.document.querySelector('input#iinumb')
     let re01 = window.document.getElementById('rep01')
     let re02 = window.document.getElementById('rep02')
+    let rpp = window.document.getElementById('rpp')
+
+    var tag = window.document.createElement('img');
+    tag.setAttribute('src','https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    tag.setAttribute('width','300px')
+    rpp.appendChild(tag)
 
     let a1 = Number(prime.value)
     let a2 = Number(segun.value)
